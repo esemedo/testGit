@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--s'assure de la compatibilité avec edge-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Pour que le navigateur comprenne que la page est en responsive-->
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="assets/style.css" >
     <title>Document</title>
     <meta name="description" content="Ma page d'accueil" ><!--Bot lit cette ligne pour tt ce qui est référencement -->
 </head>
@@ -32,18 +32,91 @@
         <a href="index.html" target="_blank">lola</a>
         <h1>iai</h1><h1>iai</h1><h1>iai</h1>
     </section>
+
     <section>
         <h4>Tableau</h4>
         <table>
-            <tr>
-                <th>Cri de joie</th>
-                <th>Cri de peur</th>
-            </th>
-            <tr>
-                <td>Super</td>
-                <td>YI</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Cri de joie</th>
+                    <th>Cri de peur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Super</td>
+                    <td>YI</td>
+                </tr>
+            </tbody>
         </table>
     </section>
+
+  </section>
+  <section>
+    <form method="post" action="traitement.php">
+        <p>
+            <label for="Monsieur"> Monsieur </label> : 
+            <input type="radio" name="civ" id="Monsieur">
+        
+            <label for="Madame"> Madame </label> : 
+            <input type="radio" name="civ" id="Madame">
+        </p>
+        <p>
+          <label for="pseudo"> Pseudo </label> : 
+          <input type="text" name="pseudo" id="pseudo">
+        </p>
+        <p>
+            <label for="mdp"> Mot de passe </label> : 
+            <input type="password" name="pass" id="mdp">
+        </p>
+        <p>
+            <label for="numéro"> Téléphone </label> : 
+            <input type="tel" name="num" id="numéro">
+        </p>
+        <p>
+            <label for="mail"> E-mail </label> : 
+            <input type="email" name="mail" id="mail">
+        </p>
+        <p>
+            <label for="color"> Couleur </label> : 
+            <input type="color" name="couleur" id="color">
+        </p>
+        <p>
+            Manga préferé :
+            
+            <input type="checkbox" name="manga" id="OP">
+            <label for="OP"> One piece </label> 
+            
+            <input type="checkbox" name="manga" id="jj">
+            <label for="jj"> JoJo </label> 
+             
+            <input type="checkbox" name="manga" id="ninja">
+            <label for="ninja"> Naruto </label> 
+             
+            <input type="checkbox" name="manga" id="VS"> 
+            <label for="VS"> Vinland Saga </label> 
+        </p>
+        <p>
+            <label> Donnez votre avis </label><br>
+            <textarea></textarea>
+        </p>
+        
+
+        <p>
+            <label for="famille"> Nombres de frères et soeurs </label> : 
+            <select name="frèreSoeurs" id="famille">
+                <option value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option> 4</option>
+                <option value="4"> Plus de 4</option>
+            </select> 
+        </p>
+        <p>
+            <input type="submit" name="validez">
+        </p>
+    </form>
+  </section>
+  
 </body>
 </html>
